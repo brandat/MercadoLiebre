@@ -5,7 +5,7 @@ const app = express();
 const publicPaht = path.resolve(__dirname, './public');
 app.use( express.static(publicPaht) );
 
-const port = ptocess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('servidor corriendo en el puerto ${port}'));
 app.use (expres.static("public"));
 

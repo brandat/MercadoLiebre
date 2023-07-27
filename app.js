@@ -25,3 +25,11 @@ app.get("/register",(req, res) =>{
 app.get("/login",(req, res) =>{
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
+
+app.post("/login", (req, res) => {
+    res.redirect("/");
+})
+
+app.post("/register", (req, res) => {
+    res.redirect("/");
+})
